@@ -6,6 +6,7 @@
 
 function getAverage(marks){
   //TODO : calculate the downward rounded average of the marks array
+  // reduce is linear complexity
   let marksSum = marks.reduce((acc, c) => acc + c, 0)
   return Math.floor(marksSum / marks.length)
 }
